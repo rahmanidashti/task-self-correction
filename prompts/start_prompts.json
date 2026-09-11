@@ -1,0 +1,18 @@
+{
+    "base-gen-2": {
+        "role": "user",
+        "content": "Question: {question}. Provide your final answer after the 'The final answer is: '."
+    },
+    "base-mc1-2": {
+        "role": "user",
+        "content": "Question: {question}. Provide your final answer after the 'The final answer is: '."
+    },
+    "cot-gen-2": {
+        "role": "user",
+        "content": "Question: {question}. Think step by step, and provide your final answer after the 'The final answer is: '."
+    },
+    "cot-mc1-2": {
+        "role": "user",
+        "content": "Question: {question}. Think step by step, and provide your final answer after the 'The final answer is: '."
+    }
+}

@@ -1,0 +1,28 @@
+api:
+    HF: ${oc.env:HF_TOKEN,null} # read from the HF_TOKEN env var; never paste a token here
+
+param:
+    iteration: 5
+    sampling: True
+    # baseline & CoT: temp 1.0, top_k 50, top_p 0.95 | self-consistency: temp 0.7, top_k 20, top_p 1.0
+    temp: 1.0
+    top_k: 50
+    top_p: 0.95
+
+model:
+    SmolLM2-1.7B: HuggingFaceTB/SmolLM2-1.7B-Instruct
+    Qwen2.5-3B: Qwen/Qwen2.5-3B-Instruct
+    Llama-3.1-8B: meta-llama/Llama-3.1-8B-Instruct
+    Qwen2.5-14B: Qwen/Qwen2.5-14B-Instruct
+    DeepSeek-R1-Distill-Llama-8B: deepseek-ai/DeepSeek-R1-Distill-Llama-8B
+    gemini/gemini-2.0-flash: gemini/gemini-2.0-flash
+    gpt-4o: gpt-4o
+
+select:
+    dataset: tiny-truthful-qa # bbeh-disambiguation-qa, tiny-truthful-qa
+    task: generation # generation, multiple-choice
+    model: Qwen2.5-3B
+    eval_model: gpt-4o # LLM judge for bbeh-disambiguation-qa generation
+    method: baseline # baseline, CoT, self-consistency
+    start_prompt: base-gen-2 # base-gen-2, base-mc1-2, cot-gen-2, cot-mc1-2
+    iterate_prompt: base-gen-2
