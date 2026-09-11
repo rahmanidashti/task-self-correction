@@ -2,6 +2,7 @@
 
 # Self-Correcting Large Language Models: Generation vs. Multiple Choice
 
+[![Project Page](https://img.shields.io/badge/Project-Page-2a78d6.svg)](https://rahmanidashti.github.io/task-self-correction/)
 [![REALM @ EMNLP 2026](https://img.shields.io/badge/REALM%20%40%20EMNLP-2026-1f6feb.svg)](https://realm-workshop.github.io/)
 [![arXiv](https://img.shields.io/badge/arXiv-2511.09381-b31b1b.svg)](https://arxiv.org/abs/2511.09381)
 [![Datasets](https://img.shields.io/badge/%F0%9F%A4%97%20Datasets-HuggingFace-yellow)](https://huggingface.co/rahmanidashti)
